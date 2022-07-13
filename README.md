@@ -20,7 +20,7 @@ Includes:
 │   │   └── views.py
 │   │
 │   │
-│   ├── ...
+│   ├── ...                  # other sub-apps
 │   │
 │   │
 │   ├── models               # models folder
@@ -37,7 +37,7 @@ Includes:
 │   ├── __init__.py
 │   ├── config.py
 │   └── extensions.py
-├── .gitignore              
+├── .gitignore              # .gitignore ready template
 ├── config.json             # JSON file for secret keys and other stuff 
 ├── manager.py
 └── requirements.txt
@@ -46,7 +46,7 @@ Includes:
 ### How to use
 
 1. Clone this repository
-    ```git
+    ```
     git clone https://github.com/NickNaskida/FlaskTemplate.git
     ```
 
@@ -56,7 +56,6 @@ Includes:
     ```
     python -m venv venv
     ```
-    In order for the virtual environment to have access to globally installed Python packages the flag --system-site-packages should be used.
     
     To activate the virtual environment
     ```
@@ -76,11 +75,11 @@ Includes:
 4. set env variable
     Just type:
     ```
-        $env:FLASK_APP="manager:app" 
+   $env:FLASK_APP="manager:app" 
     ```
 
 5. run the project
    Just type:
     ```
-        flask run
+   flask run
     ```
